@@ -7,17 +7,16 @@ import "fmt"
 type OrderStatus string
 
 const (
-	RECIEVED = "recieved"
-	CONFIRMED="confirmed"
-	PREPARED="prepared"
-	DELIVERED="delicvered"
+	RECIEVED  = "recieved"
+	CONFIRMED = "confirmed"
+	PREPARED  = "prepared"
+	DELIVERED = "delicvered"
 )
 
-func changeOrderStatus(status OrderStatus){
-	fmt.Println("Order Status to ",status);
+func changeOrderStatus(status OrderStatus) {
+	fmt.Println("Order Status to ", status)
 }
 
-
-func main(){
-changeOrderStatus(PREPARED)
+func main() {
+	changeOrderStatus(PREPARED)
 }
